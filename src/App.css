@@ -1,0 +1,277 @@
+/*--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+/*-- Reset Code --*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  background: url("./images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*-- Global Styles --*/
+
+a {
+  text-decoration: none;
+  transition: 0.5s all;
+  color: inherit;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #f9f9f9;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 7px;
+  margin: 50px 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.73);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.city {
+  width: 100%;
+  background: url("https://img.freepik.com/free-vector/sky-background-video-conferencing_23-2148639325.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.title h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Oxygen", sans-serif;
+  margin-top: 20px;
+}
+
+.current-time {
+  font-size: 35px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.current-date {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.temperature {
+  font-family: "Raleway", sans-serif;
+  font-size: 80px;
+  font-weight: 100;
+  margin: 20px 0;
+}
+
+.temperature span {
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.forecast {
+  width: 100%;
+  margin-top: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #302e53;
+}
+
+.forecast-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.forecast-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.forecast-card h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.forecast-card p {
+  font-size: 16px;
+}
+
+/*-- Search Box --*/
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+
+.search-bar::placeholder {
+  color: #fff;
+}
+
+.search-icon {
+  position: absolute;
+  right: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/*-- Footer Info --*/
+
+.footer-info {
+  margin-top: 40px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-info a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*-- Responsive Styles --*/
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .title h2 {
+    font-size: 30px;
+  }
+
+  .title h3 {
+    font-size: 20px;
+  }
+
+  .temperature {
+    font-size: 60px;
+  }
+
+  .temperature span {
+    font-size: 40px;
+  }
+
+  .forecast-card {
+    width: 120px;
+    margin: 10px 5px;
+  }
+
+  .search-bar {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 35px;
+    margin: 30px 0;
+  }
+
+  .title h2 {
+    font-size: 24px;
+  }
+
+  .title h3 {
+    font-size: 18px;
+  }
+
+  .temperature {
+    font-size: 50px;
+  }
+
+  .temperature span {
+    font-size: 30px;
+  }
+
+  .forecast-card {
+    width: 100px;
+  }
+
+  .search-bar {
+    width: 80%;
+  }
+
+  .search-icon {
+    right: 10%;
+  }
+}
+/*-- Toggle Button --*/
+.toggle-button {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.toggle-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.toggle-button:focus {
+  outline: none; /* Remove default focus outline */
+}
+
