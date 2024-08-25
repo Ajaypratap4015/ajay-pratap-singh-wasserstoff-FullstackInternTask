@@ -47,9 +47,6 @@ function Forecast() {
       });
   };
 
-  useEffect(() => {
-    search("Delhi");
-  }, []);
 
   const defaults = {
     color: "white",
