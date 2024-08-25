@@ -29,5 +29,50 @@ Ensure you have the following installed on your machine:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Ajaypratap4015/weather-application.git
-cd WeatherApp
+git clone https://github.com/Ajaypratap4015/ajay-pratap-singh-wasserstoff-FullstackInternTask.git
+```
+
+### Install Dependencies
+Run the following command to install the required npm packages:
+
+```bash
+npm install
+```
+
+### API Keys
+1. Create a .env file in the root of the project.
+
+2. Add your API keys to the .env file using the following format:
+   REACT_APP_API_KEY=your_openweathermap_api_key
+3. Update apiKeys.js to use the environment variable:
+``` bash
+   const apiKeys = {
+  base: "https://api.openweathermap.org/data/2.5/",
+  key: process.env.REACT_APP_API_KEY,
+};
+
+export default apiKeys;
+```
+### Run the Application
+Start the development server with:
+
+```bash
+npm start
+```
+
+### Contributing
+Feel free to open issues or submit pull requests if you find any bugs or have suggestions for improvements.
+
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+### Acknowledgements
+OpenWeatherMap API for weather data.
+React for building the user interface.
+Axios for making HTTP requests.
+React Animated Weather for animated weather icons.
+
+### Screenshot
+![Screenshot 2024-08-26 004649](https://github.com/user-attachments/assets/51228f00-60b4-402c-8d2b-d5d7acdf0b66)
+
+
